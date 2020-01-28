@@ -184,4 +184,7 @@ CREATE TABLE product_descript_2 (
 ![product_db_1](https://github.com/aliyuncluo/shardingjdbc-shopping/blob/master/images/product_db_1.png)
 ![product_db_2](https://github.com/aliyuncluo/shardingjdbc-shopping/blob/master/images/product_db_2.png)
 ![store_db](https://github.com/aliyuncluo/shardingjdbc-shopping/blob/master/images/store_db.png)
-
+搭建主从配置：master和slave各一个
+product_db_1库： product_info_1,product_descript_1,product_info_2,product_descript_2,region
+product_db_2库： product_info_1,product_descript_1,product_info_2,product_descript_2,region
+store_db库： store_info,region
