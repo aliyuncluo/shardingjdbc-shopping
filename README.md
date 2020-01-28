@@ -1,0 +1,2 @@
+# shardingjdbc-shopping
+shardingjdbc与springboot整合的一个案例
