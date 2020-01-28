@@ -1,7 +1,7 @@
 # shardingjdbc-shopping
 shardingjdbc与springboot整合的一个案例
 
-配置文件部分：
+一、配置文件部分：
 1.在mysql的主机上
 修改/etc/my.cnf,添加以下内容：
 
@@ -29,7 +29,7 @@ replicate_wild_ignore_table=mysql.%
 replicate_wild_ignore_table=information_schema.%
 replicate_wild_ignore_table=performance_schema.%
 
-2.建表语句部分
+二.建表语句部分
 
 create database store_db character set utf8;
 create database product_db_1 character set utf8;
@@ -179,4 +179,9 @@ CREATE TABLE product_descript_2 (
     PRIMARY KEY (id) USING BTREE,
     INDEX fk_reference_2 (product_info_id) USING BTREE
 ) ENGINE = INNODB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+
+三、表结构图
+![product_db_1](https://github.com/aliyuncluo/shardingjdbc-shopping/blob/master/images/product_db_1.png)
+![product_db_2](https://github.com/aliyuncluo/shardingjdbc-shopping/blob/master/images/product_db_2.png)
+![store_db](https://github.com/aliyuncluo/shardingjdbc-shopping/blob/master/images/store_db.png)
 
